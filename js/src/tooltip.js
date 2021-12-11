@@ -457,7 +457,7 @@ class Tooltip extends BaseComponent {
           phase: 'beforeMain',
           fn: data => {
             // pre-set popper placement in order to read properly the arrow sizes.
-            // In other way it messes the width vs height as the initial arrow style is for top placement
+            // In other way it messes the width vs height as the initial arrow style is for top placement // FIX wording
             this._getTipElement().setAttribute('data-popper-placement', data.state.placement)
           }
         }
@@ -635,7 +635,6 @@ class Tooltip extends BaseComponent {
   }
 
   // Static
-
   static jQueryInterface(config) {
     return this.each(function () {
       const data = Tooltip.getOrCreateInstance(this, config)
