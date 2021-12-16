@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   padding: $breadcrumb-padding-y $breadcrumb-padding-x;
   margin-bottom: $breadcrumb-margin-bottom;
+  letter-spacing: $breadcrumb-spacing;
   @include font-size($breadcrumb-font-size);
   list-style: none;
   background-color: $breadcrumb-bg;
@@ -35,7 +36,9 @@
   + .breadcrumb-item:hover::before {
     text-decoration: none;
   }
-
+  a{
+    color: inherit;
+  }
   &.active {
     color: $breadcrumb-active-color;
   }
